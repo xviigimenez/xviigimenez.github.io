@@ -4,8 +4,8 @@ function media() {
     var media = (nota1 + nota2) / 2;
 
     if (media >= 7) {
-        alert("Parabéns, aprovado! Média " + media);
+        window.alert("Parabéns, aprovado! Média " + media);
     } else {
-        alert("Reprovado!");
+        window.alert("Reprovado!");
     }
 }

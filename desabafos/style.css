@@ -591,9 +591,9 @@ video {
   border-color: rgb(251 146 60 / var(--tw-border-opacity));
 }
 
-.bg-purple-700 {
+.bg-purple-custom {
   --tw-bg-opacity: 1;
-  background-color: rgb(126 34 206 / var(--tw-bg-opacity));
+  background-color: rgb(24 8 33 / var(--tw-bg-opacity));
 }
 
 .bg-slate-800 {

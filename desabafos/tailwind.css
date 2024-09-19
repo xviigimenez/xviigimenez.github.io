@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+label {
+	@apply text-white;
+}
+
+.div1 {
+	display: flex;
+	align-items: center;
+}
+
+.div1 label {
+	@apply pr-3;
+}
+
+@keyframes colorChange {
+	0% {
+		color: rgb(0, 255, 170);
+	}
+	20% {
+		color: rgb(255, 0, 128);
+	}
+	30% {
+		color: rgb(208, 255, 0);
+	}
+	40% {
+		color: rgb(0, 255, 149);
+	}
+	50% {
+		color: rgb(255, 238, 0);
+	}
+	60% {
+		color: rgb(247, 0, 255);
+	}
+	70% {
+		color: rgb(0, 255, 81);
+	}
+	80% {
+		color: rgb(9, 255, 0);
+	}
+	100% {
+		color: rgb(0, 255, 170);
+	}
+}
+
+.color-transition {
+	animation: colorChange 10s linear infinite;
+}

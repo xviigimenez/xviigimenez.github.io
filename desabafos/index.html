@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>desabafos e lamentações...</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body class="bg-purple-700">
+		<h1
+			class="font-extrabold text-black color-transition tracking-[0.3em] text-center text-5xl p-20"
+		>
+			seja bem-vindo
+		</h1>
+		<div class="flex items-center justify-around">
+			<form
+				class="bg-slate-800 w-1/2 p-4 border-dotted border-orange-400 border-4 flex flex-col"
+			>
+				<label for="nome" class="text-lg">qual a sua graça?</label>
+
+				<input
+					id="nome"
+					type="text"
+					placeholder="ou seja, qual seu nome"
+				/><br />
+				<label for="idade">qual a sua idade?</label>
+				<input
+					id="idade"
+					type="number"
+					placeholder="você já é meio velho..."
+				/><br />
+				<label>como você está se sentindo?</label>
+				<div class="div1">
+					<input id="bem" type="radio" name="sentimento" />
+					<label for="bem">😃</label>
+					<input id="entediado" type="radio" name="sentimento" />
+					<label for="entediado">😐</label>
+					<input id="frustrado" type="radio" name="sentimento" />
+					<label for="frustrado">😫</label>
+					<input id="chateado" type="radio" name="sentimento" />
+					<label for="frustrado">😓</label>
+					<input id="triste" type="radio" name="sentimento" />
+					<label for="frustrado">😭</label>
+				</div>
+				<label for="desabafo">e qual seu desabafo?</label><br />
+				<textarea id="desabafo" placeholder="sinta-se à vontade..."></textarea>
+				<input type="submit" value="enviar" />
+			</form>
+			<img
+				src="img/descansando_na_chuva.gif"
+				alt="Rapaz descansando na chuva"
+				class="w-80"
+			/>
+		</div>
+	</body>
+</html>

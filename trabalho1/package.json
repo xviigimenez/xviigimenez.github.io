@@ -4,13 +4,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind": "npx tailwindcss -i tailwind.css -o style.css --watch"
+    "tailwindcss": "npx tailwindcss -i tailwind.css -o style.css --watch",
+    "posthtml": "npx posthtml -o ./ source/*.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "posthtml": "^0.16.6",
+    "posthtml-cli": "^0.10.0",
+    "posthtml-include": "^2.0.1",
     "tailwindcss": "^3.4.13"
   }
 }

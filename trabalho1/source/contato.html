@@ -10,14 +10,35 @@
     <include src="source/header.html"></include>
     <main>
         <h2 class="text-2xl font-bold">entre em contato!</h2>
-        <form class="p-4">
+        <form class="flex flex-col gap-2 p-4">
             <label for="nome" class="font-semibold">Nome</label>
-            <input id="nome" type="text" class="border-solid border-2 border-purple-100"><br>
+            <input id="nome" type="text" class="border-solid border-2 border-grey-100"><br>
             <label for="email" class="font-semibold">Email</label>
-            <input id="email" type="text" class="border-solid border-2 border-purple-100"><br>
+            <input id="email" type="email" class="border-solid border-2 border-grey-100"><br>
             <label for="telefone" class="font-semibold">Telefone</label>
-            <input id="telefone" type="number" class="border-solid border-2 border-purple-100"><br>
+            <input id="telefone" type="number" class="border-solid border-2 border-grey-100"><br>
             <textarea placeholder="O que te levou a entrar em contato?"></textarea>
+            <fieldset>
+                <legend class="font-bold">Opiniões sobre o site:</legend>
+                <input type="checkbox" id="gostei-site" name="opiniao-site">
+                <label for="gostei-site">Gostei do site</label><br>
+                <input type="checkbox" id="curriculo-competente" name="opiniao-curriculo">
+                <label for="curriculo-competente">Achei seu currículo competente</label><br>
+                <input type="checkbox" id="design-agradavel" name="opiniao-design">
+                <label for="design-agradavel">O design é agradável</label><br>
+                <input type="checkbox" id="conteudo-interessante" name="opiniao-conteudo">
+                <label for="conteudo-interte">O conteúdo é interessante</label><br>
+            </fieldset>
+            <fieldset class="my-2">
+                <legend class="font-bold">Como você encontrou nosso site?</legend>
+                <input type="radio" id="recomendacao" name="fonte-site" value="recomendacao">
+                <label for="recomendacao">Achei o site por recomendação</label><br>
+                <input type="radio" id="busca-internet" name="fonte-site" value="busca-internet">
+                <label for="busca-internet">Encontrei através de uma busca na internet</label><br>
+                <input type="radio" id="outros-meios" name="fonte-site" value="outros-meios">
+                <label for="outros-meios">Outros meios (especifique)</label><br>
+            </fieldset>
+            <button type="submit" class="bg-gray-500 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded">Enviar!</button>
         </form>
     </main>
     <include src="source/footer.html"></include>

@@ -1,0 +1,20 @@
+body {
+    background-color: aliceblue;
+}
+
+h1, h2, p {
+    font-family: arial;
+}
+
+h1 {
+    color: darkolivegreen;
+}
+
+h2 {
+    color: yellowgreen;
+}
+
+p {
+    color: greenyellow;
+    font-style: italic;
+}

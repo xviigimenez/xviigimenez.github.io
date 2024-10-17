@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 4</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+<body>
+    <p id="paragrafoEstilizado">Este é um parágrafo.</p>
+
+    <button onclick="alterarCor()">Clique para mudar a cor do parágrafo</button>
+
+    <p id="paragrafoDinamico"></p>
+
+    <input type="text" id="caixaTexto" placeholder="Digite aqui...">
+
+    <script>
+        function alterarCor() {
+            const paragrafo = document.getElementById('paragrafoEstilizado');
+            paragrafo.style.color = paragrafo.style.color === 'red' ? '' : 'red';
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const caixaTexto = document.getElementById('caixaTexto');
+            const paragrafoDinamico = document.getElementById('paragrafoDinamico');
+
+            caixaTexto.addEventListener('input', function() {
+                paragrafoDinamico.textContent = this.value;
+            });
+        });
+    </script>
+</body>
+</html>
